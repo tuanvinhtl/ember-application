@@ -1,0 +1,25 @@
+{
+  "name": "codespaces-ember",
+  "dockerComposeFile": ["docker-compose.yml"],
+  "workspaceFolder": "/workspace",
+  "shutdownAction": "stopCompose",
+  "service": "app",
+  "extensions": [
+    "esbenp.prettier-vscode",
+    "lifeart.vscode-ember-unstable",
+    "bradlc.vscode-tailwindcss",
+    "phanitejakomaravolu.EmberES6Snippets",
+    "chiragpat.vscode-glimmer",
+    "lifeart.vscode-glimmer-syntax",
+    "EditorConfig.EditorConfig"
+  ],
+  "settings": {
+    "#terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "forwardPorts": [4200],
+  "portsAttributes": {
+    "4200": {
+      "label": "HTTP"
+    }
+  }
+}
